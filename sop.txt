@@ -1,0 +1,4 @@
+Standard Operating Procedure for Sales Plan Formulation:
+1. Analyze historical sales, traffic, and user growth trends from both the same period in previous years and recent months.
+2. Identify key factors influencing sales (e.g., seasonality, promotions, or external events).
+3. Formulate the sales plan for the upcoming period.
