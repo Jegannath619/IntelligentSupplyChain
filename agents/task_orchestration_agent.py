@@ -16,5 +16,17 @@ class TaskOrchestrationAgent:
                 "Analyze historical and recent sales, traffic, and user growth of the overall market and industry, and identify the key factors affecting sales.",
                 "Formulate the computer department’s November sales plan and adjust it based on external information."
             ]
+        elif intent == "Inventory Turnover and Planning Diagnostics":
+            return [
+                "Analyze historical inventory turnover rates.",
+                "Detect anomalies in replenishment schedules.",
+                "Provide diagnostic insights for underperforming SKUs."
+            ]
+        elif intent == "In-Stock Rate Monitoring":
+            return [
+                "Track stock levels for all products.",
+                "Flag items at risk of stockouts.",
+                "Alert relevant agents for replenishment."
+            ]
         else:
             return []

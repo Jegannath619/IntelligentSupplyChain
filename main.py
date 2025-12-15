@@ -3,13 +3,12 @@ from agents.task_orchestration_agent import TaskOrchestrationAgent
 from agents.data_acquisition_agent import DataAcquisitionAgent
 from agents.data_analysis_agent import DataAnalysisAgent
 
-def main():
-    # User query
-    query = "Generate the November sales plan for the computer Department."
-    department = "computer"
-
+def run_scpa_workflow(query: str, department: str, sop_path: str):
+    """
+    Runs the Supply Chain Planning Agent workflow.
+    """
     # Load SOP
-    with open('sop.txt', 'r') as f:
+    with open(sop_path, 'r') as f:
         sop = f.read()
 
     # Instantiate agents
@@ -46,7 +45,11 @@ def main():
         final_plan += f"- {obs}\n"
     final_plan += "Final recommendation: Increase holiday promotion budget by 150%."
     print(final_plan)
-
+    return final_plan
 
 if __name__ == "__main__":
-    main()
+    run_scpa_workflow(
+        query="Generate the November sales plan for the computer Department.",
+        department="computer",
+        sop_path="sop.txt"
+    )
