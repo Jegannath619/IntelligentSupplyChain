@@ -1,0 +1,9 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: scpa_framework
+parts:
+  - caption: SCPA Framework
+    chapters:
+    - file: scpa_framework
